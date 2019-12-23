@@ -3,6 +3,9 @@
 
 <head>
     <style>
+    .search {
+    width: 40em;  height: 4em;
+    }
         .button {
   display: inline-block;
   border-radius: 4px;
@@ -54,7 +57,7 @@
 <body style="background: url(https://s2.best-wallpaper.net/wallpaper/1920x1080/1107/King-Kong-HD_1920x1080.jpg)">
  <center>
      <form action="/addTodo/" method="post">{% csrf_token %}
-         <input type="text" name="content"/>
+         <input type="text" name="content" class="search"/>
          <button type="submit" class="button" style="vertical-align:middle"><span> Add </span></button>
      </form>
 <ul>
